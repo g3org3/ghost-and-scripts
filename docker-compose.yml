@@ -6,4 +6,4 @@ services:
     ports:
       - 2368:2368
     volumes:
-      - /var/docker/ghost/data:/var/lib/ghost
+      - /apps/ghost/data:/var/lib/ghost
