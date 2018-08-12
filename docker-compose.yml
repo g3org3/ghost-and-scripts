@@ -7,3 +7,8 @@ services:
       - 2368:2368
     volumes:
       - /apps/ghost/data:/var/lib/ghost
+    environment:
+      - VIRTUAL_PORT=2368
+      - VIRTUAL_HOST=blog.lb.jorgeadolfo.com
+      - LETSENCRYPT_HOST=blog.lb.jorgeadolfo.com
+      - LETSENCRYPT_EMAIL=7jagjag@gmail.com
